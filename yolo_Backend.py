@@ -5,7 +5,7 @@ import os
 import csv
 
 # Load model
-model = YOLO("YOLO-Weights/bestest.pt")
+model = YOLO("weights/model.pt")
 
 # Allowed classes from your model
 ALLOWED = {
@@ -102,3 +102,4 @@ def detect_frame(frame, conf_thres):
                     log_violation(class_name, track_id, filename)
 
     return frame
+
