@@ -1,46 +1,58 @@
 PPE Detection – Computer Vision
-This project is a Personal Protective Equipment (PPE) Detection System built using Python, YOLO, and Streamlit. It automatically checks if people are wearing safety helmets and vests in uploaded videos or live webcam feeds.
+Personal Protective Equipment (PPE) Detection System built with Python, YOLO, and Streamlit. Detects safety helmet and vest compliance in uploaded videos or live webcam feeds.
 
 Features
-Upload and analyze safety/compliance videos
+Upload and analyze construction/safety videos
 
-Live webcam PPE detection
+Real-time live webcam detection
 
-Colored bounding boxes highlight detected gear or violations
+Colored bounding boxes for hardhats, vests, and violations
 
-Automatic screenshot saving and violation logging to CSV
+Automatic screenshot saving and CSV violation logging
 
-Adjustable detection settings (confidence, frame skip)
+Adjustable detection: confidence and frame skip
 
 Project Structure
-app.py – Streamlit frontend for user interaction and real-time results
+app.py — Streamlit frontend for UI and controls
 
-yolo_video.py – Backend AI, detection and tracking logic
+yolo_video.py — Backend AI detection and tracking logic
 
-YOLO-Weights – Folder containing pretrained YOLO model (.pt file)
+YOLO-Weights/ — Directory for pretrained YOLO model (.pt file)
 
-requirements.txt – Python dependencies for easy setup
+requirements.txt — Python dependencies
 
-Usage
-Clone this repo and install requirements:
+runtime.txt — Specifies Python version for deployment (e.g. python-3.11.9)
 
-text
+Installation & Usage
+Clone this repository:
+
+bash
+git clone https://github.com/yourusername/PPE_Detection-Computer_Vision.git
+cd PPE_Detection-Computer_Vision
+Install requirements:
+
+bash
 pip install -r requirements.txt
-Place your YOLO model weights in the YOLO-Weights folder.
+Add your YOLO .pt model file in the YOLO-Weights folder.
 
-Run the app:
+To run locally:
 
-text
+bash
 streamlit run app.py
-Upload a video or use webcam live.
+Deployment
+This project is compatible with Streamlit Cloud.
+
+Make sure requirements.txt and runtime.txt are included
+
+Deploy app.py and add YOLO weights before launch
 
 Demo
-Watch my detailed demo video on LinkedIn
-Try live on Streamlit Cloud
+Check out my demo video on LinkedIn
+Try the live app on Streamlit Cloud
 
 Model
-This project uses a publicly available pretrained YOLO model. For best results, you can train on your own PPE dataset.
+Uses public YOLO pretrained weights. For best accuracy, train on your own PPE dataset.
 
 Author
-Built by Rohan.
-Connect on LinkedIn# PPE_Detection-Computer_Vision
+Rohan
+LinkedIn
