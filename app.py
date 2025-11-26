@@ -4,7 +4,7 @@ import time
 import tempfile
 import os
 
-from yolo_video import detect_frame
+from yolo_Backend import detect_frame
 
 st.set_page_config(page_title="PPE Detection", layout="wide")
 
@@ -83,3 +83,4 @@ elif mode == "Webcam Live":
             frame_box.image(cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB), channels="RGB")
 
         cap.release()
+
